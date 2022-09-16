@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Menudo</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgba(211, 211, 211, 0.151);
+        }
+        nav{
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
+            height: 50px;
+            background-color: white;
+        }
+        nav > img{
+            height: 35px;
+            display: block;
+            position: relative;
+            margin-left: 15px;
+            margin-top: -25px;
+        }
+        h1{
+            text-align: center;
+            margin: 0px;
+            padding-top:17px;
+            font-size: 15px;
+        }
+        main{
+            background-color: white;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
+        }
+        h2{
+            font-size: larger;
+            text-align: center;
+            padding-top: 20px;
+        }
+        li > img{
+            margin: 10px auto 30px;
+            max-width: 430px;
+            border-radius: 40px;
+        }
+        li{
+            list-style: none;
+        }
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 15px;
+        }
+        .galeria{
+            overflow-x: auto;
+        }
+        .galeria::-webkit-scrollbar{
+            display: none;
+        }
+        </style>
+</head>
+<body>
+   <header>
+        <nav>
+            <h1>Menudo</h1>
+            <img src="icon.png" alt="menu"> 
+        </nav>
+   </header>
+   <main>
+        <h2>Indicações do Chef</h2>
+        <div class="galeria">
+            <ul>
+                <li><img class="item current-item" src="1.png" alt="prato 1"></li>
+                <li><img class="item current-item" src="2.png" alt="prato 2"></li>
+                <li><img class="item current-item" src="3.png" alt="prato 3"></li>
+                <li><img class="item current-item" src="4.png" alt="prato 4"></li>
+                <li><img class="item current-item" src="5.png" alt="prato 5"></li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+   </main>
+   <footer>
+
+   </footer> 
+</body>
+</html>
