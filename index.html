@@ -15,6 +15,13 @@
             padding: 0px;
             background-color: rgba(211, 211, 211, 0.151);
         }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        li{
+            list-style: none;
+        }
+        /*navegação*/
         nav{
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
             height: 50px;
@@ -26,40 +33,68 @@
             position: relative;
             margin-left: 15px;
             margin-top: -25px;
-        }
+        }        
         h1{
             text-align: center;
             margin: 0px;
             padding-top:17px;
             font-size: 15px;
         }
+
+        /*indicações do chef*/
+
         main{
             background-color: white;
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
+            padding-right: 20px;
+            padding-left: 20px;
         }
         h2{
             font-size: larger;
             text-align: center;
             padding-top: 20px;
         }
-        li > img{
-            margin: 10px auto 30px;
-            max-width: 330px;
-            border-radius: 40px;
+        .galeria > li > img{
+            margin: 0px auto 30px;
+            max-width: 350px;
+            border-radius: 10px;
         }
-        li{
-            list-style: none;
-        }
-        ul{
+        ul.galeria{
             display: flex;
             flex-flow: row nowrap;
             gap: 15px;
+            margin-bottom: 0;
+            padding-left: 0;
         }
         .galeria{
             overflow-x: auto;
         }
-        .galeria::-webkit-scrollbar{
-            display: none;
+        ul.galeria::-webkit-scrollbar {
+             height: 5px;         
+        }
+
+        ul.galeria::-webkit-scrollbar-track {
+             background: rgba(211, 211, 211, 0.678);        
+        }
+
+        ul.galeria::-webkit-scrollbar-thumb {
+            background-color: rgb(190, 190, 190);    
+            border-radius: 20px;       
+        }
+
+        /*categorias*/
+        div.menus{
+
+        }
+        .menus > li > img{
+            max-width: 200px;
+            padding: 3px;
+            border-radius: 10px;
+        }
+        ul.menus{
+            display:flex;
+            flex-flow: row wrap;
+            padding: 20px;
         }
         </style>
 </head>
@@ -70,21 +105,33 @@
             <img src="icon.png" alt="menu"> 
         </nav>
    </header>
-   <main>
+   <main class="primeiro">
         <h2>Indicações do Chef</h2>
-        <div class="galeria">
-            <ul>
+        <div>
+            <ul class="galeria">
                 <li><img class="item current-item" src="1.png" alt="prato 1"></li>
                 <li><img class="item current-item" src="2.png" alt="prato 2"></li>
                 <li><img class="item current-item" src="3.png" alt="prato 3"></li>
                 <li><img class="item current-item" src="4.png" alt="prato 4"></li>
                 <li><img class="item current-item" src="5.png" alt="prato 5"></li>
-            </ul>
-        </div>
-        <div>
-
+            </ul>  
         </div>
    </main>
+
+        <main class="segundo">
+            <div>
+                <h2>Categorias</h2>
+                <ul class="menus">
+                    <li><img src="bebidas.png" alt=""></li>
+                    <li><img src="entradas.png" alt=""></li>
+                    <li><img src="saladas.png" alt=""></li>
+                    <li><img src="principais.png" alt=""></li>
+                    <li><img src="sobremesas.png" alt=""></li>
+                    <li><img src="porçoes.png" alt=""></li>
+                </ul>
+            </div>
+        </main>
+
    <footer>
 
    </footer> 
