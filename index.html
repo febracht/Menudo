@@ -109,11 +109,11 @@
             height: 80px;
             margin-top: 20px;
         }
-        a{
+        main > a{
             text-decoration: none;
             color: black;
         }
-        a::after{
+        main > a::after{
             color: black;
         }
         a > p{
@@ -137,7 +137,20 @@
             margin-left: 30px;
             top: -30px;
         }
-        
+        footer{
+            background-color: white;
+        }
+        footer > p{
+            font-size:12px;
+            text-align: center;
+        }
+        footer > p > em > a{
+            text-decoration: none;
+            color: gray;
+        }
+        footer > p > em > a::after{
+            color: gray;
+        }
         </style>
 </head>
 <body>
@@ -181,7 +194,7 @@
     </main>
 
    <footer>
-        <h4>Design and developed by Fernanda Bracht</h4>
+        <p><em><a href="http://instagram.com/fernandabracht">Design and developed by Fernanda Bracht</a></em></p>
    </footer> 
 </body>
 </html>
