@@ -26,7 +26,8 @@
             text-align: center;
             padding-top: 20px;
         }
-        /*navegação*/
+
+/*navegação*/
         nav{
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
             height: 35px;
@@ -49,8 +50,7 @@
             font-size: 15px;
         }
 
-        /*indicações do chef*/
-
+/*indicações do chef*/
         main{
             background-color: white;
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
@@ -60,18 +60,19 @@
         .primeiro{
             margin-top: 50px;
         }
-        .galeria > li > img{
-            margin: 0px auto 30px;
+        .galeria > li > a > img{
             width: 100%;
+            height: auto;
             min-width: 280px;
-            border-radius: 10px;
+            top: 0px; left: 0px;
+            border-radius: 10px 10px 0px 0px; 
         }
         ul.galeria{
             display: flex;
             flex-flow: row nowrap;
             gap: 15px;
             margin-bottom: 0;
-            padding-left: 0;
+            padding-left: 0; 
         }
         .galeria{
             overflow-x: auto;
@@ -88,14 +89,36 @@
             background-color: rgb(190, 190, 190);    
             border-radius: 20px;       
         }
+        li > h4{
+            font-size: 12px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+        li > p{
+            font-size: 11px;
+        }
+        li > h4,p{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        li{
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.100);
+            border: 1px solid rgba(211, 211, 211, 0.699);
+        }
+        h4 > span{
+            padding-left: 115px;
+        }
+/*categorias*/
 
-        /*categorias*/
-
-        .menus > img{
+        .menus > a > img{
             width: 180px;
+            height: auto;
             max-width: 46%;
             border-radius: 10px;
-            margin: 3px;          
+            margin: 3px;   
+                 
         }
         .menus {   
            display: block;
@@ -104,7 +127,7 @@
            padding-left: 10px;
            padding-bottom: 30px;
         }
-        /*redes sociais*/
+/*redes sociais*/
         .terceiro{
             height: 80px;
             margin-top: 20px;
@@ -138,7 +161,7 @@
             margin-left: 30px;
             top: -30px;
         }
-        /*footer*/
+/*footer*/
         footer{
             background-color: white;
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
@@ -171,11 +194,36 @@
         <h2>Indicações do Chef</h2>
         <div>
                 <ul class="galeria">
-                    <li><img src="1.png" alt="prato 1"></li>
-                    <li><img src="2.png" alt="prato 2"></li>
-                    <li><img src="3.png" alt="prato 3"></li>
-                    <li><img src="4.png" alt="prato 4"></li>
-                    <li><img src="5.png" alt="prato 5"></li>
+                    <li><a href="prato1.html">
+                        <img src="1.png" alt="prato 1"></a>
+                            <h4>Nome do prato <span>R$49,90</span></h4>
+                            <p>Descrição do prato com todos os detalhes que
+                               fazem do prato o melhor da região.</p>
+                    </li>
+                    <a href="prato2.html">
+                        <li><img src="2.png" alt="prato 2"></a>
+                            <h4>Nome do prato <span>R$49,90</span></h4>
+                            <p>Descrição do prato com todos os detalhes que
+                               fazem do prato o melhor da região.</p></li>
+                   
+                    <li><a href="prato3.html">
+                        <img src="3.png" alt="prato 3"></a>
+                            <h4>Nome do prato <span>R$49,90</span></h4>
+                            <p>Descrição do prato com todos os detalhes que
+                               fazem do prato o melhor da região.</p>
+                    </li>
+                    <li><a href="prato4.html">
+                        <img src="4.png" alt="prato 4"></a>
+                            <h4>Nome do prato <span>R$49,90</span></h4>
+                            <p>Descrição do prato com todos os detalhes que
+                               fazem do prato o melhor da região.</p>
+                    </li>
+                    <li><a href="prato5.html">
+                        <img src="5.png" alt="prato 5"></a>
+                            <h4>Nome do prato <span>R$49,90</span></h4>
+                            <p>Descrição do prato com todos os detalhes que
+                               fazem do prato o melhor da região.</p>
+                    </li>
                 </ul>
         </div>
    </main>
@@ -183,12 +231,12 @@
     <main class="segundo"> 
            <h2>Categorias</h2>
             <div class="menus">
-                        <img src="Imagens PMG/1.png" alt="">
-                        <img src="Imagens PMG/2.png" alt="">
-                        <img src="Imagens PMG/3.png" alt="">
-                        <img src="Imagens PMG/4.png" alt="">
-                        <img src="Imagens PMG/5.png" alt="">
-                        <img src="Imagens PMG/6.png" alt="">  
+                        <a href="bebidas.html"><img src="Imagens PMG/1.png" alt=""></a>
+                        <a href="saladas.html"><img src="Imagens PMG/2.png" alt=""></a>
+                        <a href="entradas.html"><img src="Imagens PMG/3.png" alt=""></a>
+                        <a href="principais.html"><img src="Imagens PMG/4.png" alt=""></a>
+                        <a href="sobremesas.html"><img src="Imagens PMG/5.png" alt=""></a>
+                        <a href="porçoes.html"><img src="Imagens PMG/6.png" alt=""></a>  
             </div>
     </main>
     <main class="terceiro">
