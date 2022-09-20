@@ -70,9 +70,9 @@
         ul.galeria{
             display: flex;
             flex-flow: row nowrap;
+            padding-left: 0%;
+            padding-right: 0%;
             gap: 15px;
-            margin-bottom: 0;
-            padding-left: 0; 
         }
         .galeria{
             overflow-x: auto;
@@ -117,7 +117,7 @@
             height: auto;
             max-width: 46%;
             border-radius: 10px;
-            margin: 3px;   
+            margin: 3px;  
                  
         }
         .menus {   
@@ -148,7 +148,7 @@
             line-height: 20px;
             white-space: nowrap;
         }
-        a > img{
+        .instagram,.divisoria{
             height: 40px;
             position: relative;
             left: 20px;
@@ -198,10 +198,8 @@
                         <img src="1.png" alt="prato 1"></a>
                             <h4>Nome do prato <span>R$49,90</span></h4>
                             <p>Descrição do prato com todos os detalhes que
-                               fazem do prato o melhor da região.</p>
-                    </li>
-                    <a href="prato2.html">
-                        <li><img src="2.png" alt="prato 2"></a>
+                               fazem do prato o melhor da região.</p></li>
+                    <li><a href="prato2.html"><img src="2.png" alt="prato 2"></a>
                             <h4>Nome do prato <span>R$49,90</span></h4>
                             <p>Descrição do prato com todos os detalhes que
                                fazem do prato o melhor da região.</p></li>
@@ -241,7 +239,7 @@
     </main>
     <main class="terceiro">
         <a href="http://instagram.com/fernandabracht">
-            <img src="instagram.png" alt="instagram icon">
+            <img class="instagram" src="instagram.png" alt="instagram icon">
             <img class="divisoria" src="linha.png" alt="divisoria">
             <p><strong>Nos siga nas redes sociais!</strong><br>
             Fernanda Bracht (@fernandabracht) •<br> Instagram fotos e vídeos</p>
