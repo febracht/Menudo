@@ -20,24 +20,32 @@
         }
         li{
             list-style: none;
+        }        
+        h2{
+            font-size: larger;
+            text-align: center;
+            padding-top: 20px;
         }
         /*navegação*/
         nav{
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
-            height: 50px;
-            background-color: white;
+            height: 35px;
+            background-color: rgba(255, 255, 255, 0.877);
+            position: fixed;
+            width: 100%;
+            top: 0;
         }
         nav > img{
-            height: 35px;
+            height: 26px;
             display: block;
             position: relative;
             margin-left: 15px;
-            margin-top: -25px;
+            margin-top: -20px;
         }        
         h1{
             text-align: center;
             margin: 0px;
-            padding-top:17px;
+            padding-top:10px;
             font-size: 15px;
         }
 
@@ -46,17 +54,16 @@
         main{
             background-color: white;
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
-            padding-right: 20px;
-            padding-left: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
         }
-        h2{
-            font-size: larger;
-            text-align: center;
-            padding-top: 20px;
+        .primeiro{
+            margin-top: 50px;
         }
         .galeria > li > img{
             margin: 0px auto 30px;
-            max-width: 350px;
+            width: 100%;
+            min-width: 280px;
             border-radius: 10px;
         }
         ul.galeria{
@@ -84,16 +91,58 @@
 
         /*categorias*/
 
-        .menus > li > img{
-            max-width: 200px;
-            padding: 3px;
+        .menus > img{
+            width: 180px;
+            max-width: 46%;
             border-radius: 10px;
+            margin: 3px;          
         }
-        ul.menus{
-            display:flex;
-            flex-flow: row wrap;
-            padding: 20px;
+        .menus {   
+           display: block;
+           margin: auto; 
+           width: fit-content;
+           padding-left: 10px;
+           padding-bottom: 30px;
         }
+        /*redes sociais*/
+        .terceiro{
+            height: 80px;
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a::after{
+            color: black;
+        }
+        h3{
+            font-size: 12px;
+            margin-bottom: 10%;
+            margin-left: 100px;
+            position: relative;
+            top: -90px;
+        }
+        a > p{
+            font-size: 13px;
+            margin-left: 100px;
+            position: relative;
+            top: -110px;
+        }
+        a > img{
+            height: 40px;
+            position: relative;
+            left: 20px;
+            top:20px;
+        }
+        .divisoria{
+            height: 55px;
+            display: block;
+            position: relative;
+            margin-left: 30px;
+            top: -30px;
+        }
+        
         </style>
 </head>
 <body>
@@ -106,32 +155,39 @@
    <main class="primeiro">
         <h2>Indicações do Chef</h2>
         <div>
-            <ul class="galeria">
-                <li><img class="item current-item" src="1.png" alt="prato 1"></li>
-                <li><img class="item current-item" src="2.png" alt="prato 2"></li>
-                <li><img class="item current-item" src="3.png" alt="prato 3"></li>
-                <li><img class="item current-item" src="4.png" alt="prato 4"></li>
-                <li><img class="item current-item" src="5.png" alt="prato 5"></li>
-            </ul>  
+                <ul class="galeria">
+                    <li><img src="1.png" alt="prato 1"></li>
+                    <li><img src="2.png" alt="prato 2"></li>
+                    <li><img src="3.png" alt="prato 3"></li>
+                    <li><img src="4.png" alt="prato 4"></li>
+                    <li><img src="5.png" alt="prato 5"></li>
+                </ul>
         </div>
    </main>
 
-        <main class="segundo">
-            <div>
-                <h2>Categorias</h2>
-                <ul class="menus">
-                    <li><img src="bebidas.png" alt=""></li>
-                    <li><img src="entradas.png" alt=""></li>
-                    <li><img src="saladas.png" alt=""></li>
-                    <li><img src="principais.png" alt=""></li>
-                    <li><img src="sobremesas.png" alt=""></li>
-                    <li><img src="porçoes.png" alt=""></li>
-                </ul>
+    <main class="segundo"> 
+           <h2>Categorias</h2>
+            <div class="menus">
+                        <img src="Imagens PMG/1.png" alt="">
+                        <img src="Imagens PMG/2.png" alt="">
+                        <img src="Imagens PMG/3.png" alt="">
+                        <img src="Imagens PMG/4.png" alt="">
+                        <img src="Imagens PMG/5.png" alt="">
+                        <img src="Imagens PMG/6.png" alt="">  
             </div>
-        </main>
+    </main>
+    <main class="terceiro">
+        <a href="http://instagram.com/fernandabracht">
+            <img src="instagram.png" alt="instagram icon">
+            <img class="divisoria" src="linha.png" alt="divisoria">
+            <h3>Nos siga nas redes sociais!</h3>
+            <p>Fernanda Bracht (@fernandabracht)</p>
+            
+        </a>
+    </main>
 
    <footer>
-
+        <h4>Design and developed by Fernanda Bracht</h4>
    </footer> 
 </body>
 </html>
