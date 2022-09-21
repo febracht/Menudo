@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+
+    <style>
+ *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgba(211, 211, 211, 0.151);
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        li{
+            list-style: none;
+        }        
+
+
+/*navegação*/
+        nav{
+            height: 40px;
+            background-color: white;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            z-index: 1;
+        }
+        nav > a > img{
+            height: 26px;
+            display: block;
+            position: relative;
+            margin-left: 15px;
+            margin-top: -22px;
+        }        
+        nav > h1{
+            text-align: center;
+            margin: 0px;
+            padding-top:10px;
+            font-size: 15px;
+        }
+        header > div{
+            height: 100px;
+            width: auto;
+            position: absolute;
+        }
+/*listagem*/
+        main{
+            margin-top: 90px;
+        }
+        ul{
+            background-color: white;
+            position: fixed;
+            z-index: 1;
+            display: flex;
+            flex-flow: row nowrap;
+            overflow-x: scroll;
+            width: 100%;
+            padding-left: 0;
+            margin-top: 30px;
+            white-space: nowrap;   
+            top: 5px;         
+        }
+        ul::-webkit-scrollbar {
+             height: 5px;         
+        }
+
+        ul::-webkit-scrollbar-track {
+             background: rgba(211, 211, 211, 0.678);        
+        }
+
+        ul::-webkit-scrollbar-thumb {
+            background-color: rgb(190, 190, 190);    
+            border-radius: 20px;       
+        }
+        li{
+            padding: 10px;
+            border: 1px solid rgba(211, 211, 211, 0.400);
+            background-color: white;
+            color: black;
+        }
+        a{
+            text-decoration: none;
+        }
+        main > div{
+            background-color: white;
+            padding-left: 0;
+
+       }
+        section > h1{
+            font-size: large;
+            padding-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 13px;
+        }
+        
+        span > h2{
+            font-size: 11px;
+            text-align: left;
+            margin-bottom: -5px;
+        }
+        span > p{
+            font-size: 10px;
+            text-align: left;
+            max-width: 320px;
+            text-align: justify;
+        }
+        div > img{
+            width: fit-content;
+            max-width: 105px;
+            max-height: 105px;
+        }
+        .lista{
+            display: inline-flex;
+        }
+        #content1, #content2, #content3, #content4  {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            left: 0;
+            margin-top: -80px;
+            background-color: transparent;
+            z-index: -1;
+        }
+        div > span{
+            padding-left: 15px;
+            border: 1px solid rgba(211, 211, 211, 0.400);
+            padding-right: 15px;
+            background-color: white;
+        }
+        span > span{
+            font-size: 11px;
+            font-weight: 600;    
+            position: relative;
+            text-align: center;           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Menudo</h1>
+            <a href="index.html"><img src="seta-esquerda.png" alt=""></a> 
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <ul>
+            <a href="#content1">
+                <li>Drinks</li>
+            </a>
+            <a href="#content2">
+                <li>Cervejas</li>
+            </a>
+            <a href="#content3">
+                <li>Vinhos</li>
+            </a>
+            <a href="#content4">
+                <li>Não-Alcoólicos</li>
+            </a>
+        </ul>
+        
+        <section>
+            <div id="content1"></div>
+                <h1>Drinks</h1>
+
+                <div class="lista">
+                    <img src="drinks/1.png" alt="">
+                    <span>
+                        <h2>Drink A</h2><span>R$49,90</span>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="drinks/2.png" alt="">
+                    <span>
+                        <h2>Drink B</h2><span>R$49,90</span>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="drinks/3.png" alt="">
+                    <span>
+                        <h2>Drink C <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="drinks/4.png" alt="">
+                    <span>
+                        <h2>Drink D <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="drinks/5.png" alt="">
+                    <span>
+                        <h2>Drink E <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="drinks/6.png" alt="">
+                    <span>
+                        <h2>Drink F <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+           
+
+
+            <div id="content2"></div>
+                <h1>Cervejas</h1>
+                <div class="lista">
+                    <img src="cervejas/1.png" alt="">
+                    <span>
+                        <h2>Cerveja A <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="cervejas/2.png" alt="">
+                    <span>
+                        <h2>Cerveja B <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="cervejas/3.png" alt="">
+                    <span>
+                        <h2>Cerveja C <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="cervejas/4.png" alt="">
+                    <span>
+                        <h2>Cerveja D <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="cervejas/5.png" alt="">
+                    <span>
+                        <h2>Cerveja E <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+            
+
+
+            <div id="content3"></div>
+                <h1>Vinhos</h1>
+                <div class="lista">
+                    <img src="vinhos/1.png" alt="">
+                    <span>
+                        <h2>Vinho A <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="vinhos/2.png" alt="">
+                    <span>
+                        <h2>Vinho B <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="vinhos/3.png" alt="">
+                    <span>
+                        <h2>Vinho C <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+            
+            <div id="content4"> </div>
+                <h1>Não-Alcoólicos</h1>
+                <div class="lista">
+                    <img src="naoalcoolicos/1.png" alt="">
+                    <span>
+                        <h2>Água <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="naoalcoolicos/2.png" alt="">
+                    <span>
+                        <h2>Refrigerante <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="naoalcoolicos/3.png" alt="">
+                    <span>
+                        <h2>Suco Natural <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="naoalcoolicos/4.png" alt="">
+                    <span>
+                        <h2>Chá Gelado <span>R$49,90</span></h2>
+                        <p>Descrição da bebida mais deliciosa do mundo,
+                            com os melhores ingredientes do mercado.
+                            Nossa receita contém componentes incríveis
+                            que fazem com que essa bebida seja a melhor escolha
+                            para todos os momentos.</p>
+                    </span>
+                </div>
+           
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
