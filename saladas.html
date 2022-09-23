@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgba(211, 211, 211, 0.151);
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        li{
+            list-style: none;
+        }        
+
+
+/*navegação*/
+        nav{
+            height: 40px;
+            background-color: white;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            z-index: 1;
+        }
+        nav > a > img{
+            height: 26px;
+            display: block;
+            position: relative;
+            margin-left: 15px;
+            margin-top: -22px;
+        }        
+        nav > h1{
+            text-align: center;
+            margin: 0px;
+            padding-top:10px;
+            font-size: 15px;
+        }
+        header > div{
+            height: 100px;
+            width: auto;
+            position: absolute;
+        }
+/*listagem*/
+        main{
+            margin-top: 50px;
+        }
+        ul{
+            background-color: white;
+            position: fixed;
+            z-index: 1;
+            display: flex;
+            flex-flow: row nowrap;
+            overflow-x: scroll;
+            width: 100%;
+            padding-left: 0;
+            margin-top: 30px;
+            white-space: nowrap;   
+            top: 5px;         
+        }
+        ul::-webkit-scrollbar {
+             height: 5px;         
+        }
+
+        ul::-webkit-scrollbar-track {
+             background: rgba(211, 211, 211, 0.678);        
+        }
+
+        ul::-webkit-scrollbar-thumb {
+            background-color: rgb(190, 190, 190);    
+            border-radius: 20px;       
+        }
+        li{
+            padding: 10px 25px 10px;
+            border: 1px solid rgba(211, 211, 211, 0.400);
+            background-color: white;
+            color: black;
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+        }
+        main > div{
+            background-color: white;
+            padding-left: 0;
+
+       }
+        section > h1{
+            font-size: large;
+            padding-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 13px;
+        }
+        
+        span > h2{
+            font-size: 11px;
+            text-align: left;
+            margin-bottom: -5px;
+        }
+        span > p{
+            font-size: 10px;
+            text-align: left;
+            max-width: 320px;
+            margin-top: 7px;
+            line-height: 11px;
+        }
+        div > img{
+            width: fit-content;
+            max-width: 105px;
+            max-height: 105px;
+        }
+        .lista{
+            display: inline-flex;
+        }
+        #content1, #content2, #content3, #content4  {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            left: 0;
+            margin-top: -80px;
+            background-color: transparent;
+            z-index: -1;
+        }
+        div > span{
+            padding-left: 15px;
+            border: 1px solid rgba(211, 211, 211, 0.400);
+            padding-right: 15px;
+            background-color: white;
+            height: 103.5px;
+        }
+        h2 > strong{
+            font-size: 11px;
+            font-weight: 600;    
+            position: relative;
+            text-align: right;      
+            display: block;  
+            top: -13px;
+        }
+        h2{
+            display: block;
+            position: relative;
+            top: 12px;
+            margin-bottom: -2px;
+            margin-top: -2px;
+        }
+        /*footer*/
+        footer{
+            background-color: white;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.062);
+            padding-right: 10px;
+            padding-left: 10px;
+            height: 40px;
+        }
+        footer > p{
+            font-size:10px;
+            text-align: center;
+            padding-top: 12px;
+        }
+        footer > p > em > a{
+            text-decoration: none;
+            color: gray;
+        }
+        footer > p > em > a::after{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Menudo</h1>
+            <a href="index.html"><img src="seta-esquerda.png" alt=""></a> 
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        
+        <section>
+            <div id="content1"></div>
+                <h1>Saladas Especiais</h1>
+
+                <div class="lista">
+                    <img src="saladas/1.png" alt="">
+                    <span>
+                        <h2>Salada A<strong>R$49,90</strong></h2>
+                        <p>Salada com folhas selecionadas a dedo para você desfrutar
+                            da melhor combinação gastronômica orgânica. Folhas frescas e verdinhas
+                            de culturas regionais e verduras frescas do dia.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="saladas/2.png" alt="">
+                    <span>
+                        <h2>Salada B<strong>R$49,90</strong></h2>
+                        <p>Salada com folhas selecionadas a dedo para você desfrutar
+                            da melhor combinação gastronômica orgânica. Folhas frescas e verdinhas
+                            de culturas regionais e verduras frescas do dia.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="saladas/3.png" alt="">
+                    <span>
+                        <h2>Salada C<strong>R$49,90</strong></h2>
+                        <p>Salada com folhas selecionadas a dedo para você desfrutar
+                            da melhor combinação gastronômica orgânica. Folhas frescas e verdinhas
+                            de culturas regionais e verduras frescas do dia.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="saladas/4.png" alt="">
+                    <span>
+                        <h2>Salada D<strong>R$49,90</strong></h2>
+                        <p>Salada com folhas selecionadas a dedo para você desfrutar
+                            da melhor combinação gastronômica orgânica. Folhas frescas e verdinhas
+                            de culturas regionais e verduras frescas do dia.</p>
+                    </span>
+                </div>
+                <div class="lista">
+                    <img src="saladas/5.png" alt="">
+                    <span>
+                        <h2>Salada E<strong>R$49,90</strong></h2>
+                        <p>Salada com folhas selecionadas a dedo para você desfrutar
+                            da melhor combinação gastronômica orgânica. Folhas frescas e verdinhas
+                            de culturas regionais e verduras frescas do dia.</p>
+                    </span>
+                </div>
+        </section>
+
+    </main>
+
+        <footer>
+            <p><em><a 
+                href="http://instagram.com/fernandabracht"><strong>Menudo</strong> is designed and developed by 
+                <strong>Fernanda Bracht</strong>
+            </a></em></p>
+       </footer> 
+
+</body>
+</html>
